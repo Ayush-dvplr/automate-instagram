@@ -1,5 +1,6 @@
 import puppeteer from "puppeteer";
-// Or import puppeteer from 'puppeteer-core';
+import dotenv from "dotenv";
+dotenv.config();
 
 // Launch the browser and open a new blank page
 const browser = await puppeteer.launch({
@@ -13,8 +14,8 @@ await page.goto("https://www.instagram.com/", {
 });
 // Set screen size.
 await page.setViewport({ width: 1080, height: 1024 });
-await page.locator("input[name='username']").fill("Ayush");
-await page.locator("input[name='password']").fill("pasdvavsas");
+await page.locator("input[name='username']").fill("ayush.dvlpr");
+await page.locator("input[name='password']").fill(process.env.pass);
 
 await page.locator("button[type='submit']").click();
 
