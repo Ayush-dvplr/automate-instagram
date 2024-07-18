@@ -40,18 +40,29 @@ await page.locator("button[type='submit']").click();
 await page.waitForSelector("svg[aria-label='Home']");
 await delay(1000);
 
-await page.goto("https://www.instagram.com/dhruvrathee/", {
+await page.goto("https://www.instagram.com/chandigarhuniversity/", {
   waitUntil: "networkidle2",
 });
+await delay(2000);
+const preloadHref = await page.$eval("div._aagv img", (el) => el.alt);
+console.log("image caption : ", preloadHref);
+await page.locator("div._aagw").click();
 
+await page.waitForSelector("div._a9zs span");
+const options = await page.$$eval("div._a9zs span", (options) => {
+  return options.map((option) => {
+    return option.innerText;
+  });
+});
+console.log("options : ", options);
 await delay(2000);
 
 await page.goto("https://www.instagram.com/ayush.dvlpr/", {
   waitUntil: "networkidle2",
 });
-await delay(500);
+await delay(1000);
 await page.locator("svg[aria-label='Options']").click();
-await delay(500);
+await delay(1000);
 await page.locator("text/Log Out").click();
 await delay(2000);
 await browser.close();
