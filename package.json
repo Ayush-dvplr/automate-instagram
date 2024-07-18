@@ -1,5 +1,22 @@
 {
   "dependencies": {
     "puppeteer": "^22.13.1"
-  }
+  },
+  "name": "automate-instagram",
+  "version": "1.0.0",
+  "description": "automate instagram to login and get image desc and get commect sentimental analysis",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "Puppeteer",
+    "node",
+    "automate",
+    "sentimental-analysis"
+  ],
+  "author": "Ayush sah",
+  "license": "ISC"
 }
