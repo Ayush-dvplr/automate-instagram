@@ -1,6 +1,6 @@
 # Automate Instagram Login
 
-This project uses Puppeteer to automate the login process to Instagram and navigate to a specific profile page.
+In this project, we utilize Puppeteer to automate the login process to Instagram, navigate to a specified profile page, and extract relevant data such as the number of posts, followers, and following. Additionally, we retrieve the caption of the first image and the top 10 comments, perform sentiment analysis on these comments, and print all collected data to the console.
 
 ## Getting Started
 
