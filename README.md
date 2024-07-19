@@ -39,7 +39,7 @@ In this project, we utilize Puppeteer to automate the login process to Instagram
 5. **Update index.js:**
 
 ```bash
-   await page.type("input[name='username']", "your_user_name", { delay: 100 }); // Delay of 100ms between keystrokes
+   await page.type("input[name='username']", "your_user_name", { delay: 100 });
 ```
 
 ### Running the Project
