@@ -8,7 +8,7 @@
   "description": "automate instagram to login and get image desc and get commect sentimental analysis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "type": "module",
   "keywords": [
